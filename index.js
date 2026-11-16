@@ -39,6 +39,12 @@ res.send(result);
 })
 
 // jobs related apis
+app.get('/jobs',async(req,res)=>{
+  const cursor=jobs.find({});
+  const result=await cursor.toArray();
+  res.send(result);
+})
+
 app.post('/jobs',async(req,res)=>{
   const job=req.body;
   const result=await jobs.insertOne(job);
