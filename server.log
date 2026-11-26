@@ -1,0 +1,24 @@
+You successfully connected to MongoDB!
+Example app listening on port 5000
+mongodb query: {}
+mongodb query: {
+  "remote": true,
+  "category": {
+    "$regex": "^marketing$",
+    "$options": "i"
+  }
+}
+mongodb query: {}
+mongodb query: {}
+mongodb query: {}
+BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+    at new ObjectId (C:\projects\Milestone-9\hireloop-server\node_modules\bson\lib\bson.cjs:2730:23)
+    at file:///C:/projects/Milestone-9/hireloop-server/index.js:123:20
+    at Layer.handleRequest (C:\projects\Milestone-9\hireloop-server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\projects\Milestone-9\hireloop-server\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\projects\Milestone-9\hireloop-server\node_modules\router\lib\route.js:117:3)
+    at handle (C:\projects\Milestone-9\hireloop-server\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\projects\Milestone-9\hireloop-server\node_modules\router\lib\layer.js:152:17)
+    at C:\projects\Milestone-9\hireloop-server\node_modules\router\index.js:295:15
+    at param (C:\projects\Milestone-9\hireloop-server\node_modules\router\index.js:600:14)
+    at param (C:\projects\Milestone-9\hireloop-server\node_modules\router\index.js:610:14)
